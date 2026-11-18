@@ -1,0 +1,54 @@
+[project]
+name = "localrag"
+version = "0.1.0"
+description = "Paikallinen RAG hakemiston dokumenteille: PostgreSQL + pgvector, LLM-agenteille MCP:n kautta"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = [
+    "psycopg[binary]>=3.2",
+    "pgvector>=0.3",
+    "numpy>=1.26",
+    "httpx>=0.27",
+    "pydantic-settings>=2.4",
+    "typer>=0.12",
+    "pypdf>=5.0",
+    "mcp>=2.3",
+    "pyyaml>=6.0",
+    "fastembed>=0.7",
+]
+
+[project.optional-dependencies]
+# Raskas (tuo mukanaan torchin); mahdollistaa docx/pptx/xlsx/html-tiedostot ja paremman PDF-parsinnan.
+docling = ["docling>=2.0"]
+
+[project.scripts]
+localrag = "localrag.cli:app"
+localrag-mcp = "localrag.mcp_server:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6", "reportlab>=4.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/localrag"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# E2E-testi vaatii embedding-mallin; aja se erikseen: pytest -m e2e
+addopts = "-m 'not e2e'"
+markers = [
+    "integration: vaatii Postgres + pgvector -kannan (ohitetaan, jos kanta ei ole saatavilla)",
+    "e2e: vaatii tietokannan ja oikean embedding-mallin (Ollama tai OpenAI)",
+]

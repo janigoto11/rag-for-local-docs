@@ -1,0 +1,15 @@
+# Kopioi tiedostoksi evals/questions.yaml (ei versionhallinnassa) ja kirjoita kysymykset
+# omista dokumenteistasi. `expected` sisältää polun osamerkkijonoja; kysymys lasketaan
+# osumaksi, jos mikä tahansa vastaava tiedosto on k:n parhaan dokumentin joukossa.
+# Valinnainen `expected_text` on vastauksen sisältävä tekstinpätkä: palatason osuma, jos
+# jokin k:n parhaasta palasta sisältää sen.
+# Tavoitteeksi 20-50 kysymystä: sekä täsmätermejä että eri sanoin muotoiltuja kysymyksiä,
+# suomeksi ja englanniksi.
+
+- question: "What port does the local database listen on?"
+  expected: ["docker-compose.yml"]
+  expected_text: "5433"
+
+- question: "Miten embedding-malli vaihdetaan?"
+  expected: ["README.md"]
+  expected_text: "localrag reset"

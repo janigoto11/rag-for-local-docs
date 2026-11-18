@@ -1,0 +1,63 @@
+# Demokorpuksen (examples/docs) eval-kysymykset. Käytetään sekä komennolla
+# `localrag eval examples/questions.yaml` että e2e-laatutestissä (tests/test_e2e_quality.py).
+#
+# expected:      tiedostonimen osamerkkijonoja; dokumenttitason osuma, mikä tahansa kelpaa
+# expected_text: vastauksen sisältävä tekstinpätkä; palatason osuma, jos jokin k:n parhaasta
+#                palasta sisältää sen (kirjainkoko ja välilyönnit normalisoidaan)
+
+# Täsmätermit: löytyvät jo tekstihaulla
+- question: "Mikä on salasanan vähimmäispituus?"
+  expected: ["tietoturvaohje"]
+  expected_text: "14 merkkiä"
+- question: "Mikä on vierasverkon Lumikko-Guest salasana?"
+  expected: ["perehdytys-ukk"]
+  expected_text: "vaihtuu viikoittain"
+- question: "Mikä on Virvatuli Kuljetuksen sopimuksen irtisanomisaika?"
+  expected: ["palvelusopimus-virvatuli"]
+  expected_text: "kuuden (6) kuukauden"
+
+# Eri sanoin muotoillut: vaativat semanttista hakua
+- question: "Kuinka nopeasti pitää ilmoittaa, jos läppäri varastetaan?"
+  expected: ["tietoturvaohje"]
+  expected_text: "2 tunnin kuluessa"
+- question: "Paljonko hotelliyö saa maksaa Helsingissä?"
+  expected: ["matkustusohje"]
+  expected_text: "160 euroa pääkaupunkiseudulla"
+- question: "Milloin saan tilata taksin työmatkalla?"
+  expected: ["matkustusohje"]
+  expected_text: "klo 23.00-06.00"
+- question: "Kuka auttaa, jos tietokone ei käynnisty?"
+  expected: ["perehdytys-ukk"]
+  expected_text: "it-tuki@lumikko.example"
+- question: "Miksi uuden version julkaisu myöhästyy?"
+  expected: ["kokousmuistio"]
+  expected_text: "rajapintamuutoksesta"
+- question: "Kuinka monta uutta ihmistä päätettiin rekrytoida?"
+  expected: ["kokousmuistio"]
+  expected_text: "kaksi testaajaa"
+- question: "Saako tiedostoja siirtää muistitikulla?"
+  expected: ["tietoturvaohje"]
+  expected_text: "USB-muistitikkujen"
+- question: "Kuinka nopeasti palveluntarjoajan pitää reagoida, kun palvelu on kokonaan alhaalla?"
+  expected: ["palvelusopimus-virvatuli"]
+  expected_text: "1 tunti, 24/7"
+
+# Kieltenvälinen haku: suomenkielinen kysymys, englanninkielinen dokumentti ja päinvastoin
+- question: "Montako API-kutsua minuutissa Revontuli sallii?"
+  expected: ["revontuli-product-overview"]
+  expected_text: "600 requests per minute"
+- question: "Missä maissa reittioptimointi toimii?"
+  expected: ["revontuli-product-overview"]
+  expected_text: "Finland, Sweden, Norway and Estonia"
+- question: "What is the guaranteed availability in the Virvatuli contract?"
+  expected: ["palvelusopimus-virvatuli"]
+  expected_text: "99,5 %"
+- question: "How many days of vacation can be saved for later?"
+  expected: ["lomakaytanto-2026"]
+  expected_text: "enintään 10 päivää"
+
+# Versiot: molemmat lomakäytännöt vastaavat dokumenttitasolla, mutta palatasolla
+# odotetaan voimassa olevan 2026-version vastausta
+- question: "Mihin mennessä kesälomatoiveet pitää jättää?"
+  expected: ["lomakaytanto"]
+  expected_text: "Lumoon 15.3. mennessä"

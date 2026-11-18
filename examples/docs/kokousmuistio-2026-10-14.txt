@@ -1,0 +1,51 @@
+LUMIKKO DEMO OY - OHJAUSRYHMÄN KOKOUSMUISTIO
+
+(Kuvitteellinen yritys ja henkilöt. Dokumentti on localrag-projektin demoaineistoa.)
+
+Aika: 14.10.2026 klo 13.00-14.30
+Paikka: Neuvotteluhuone Kuura ja Teams
+
+Läsnä:
+  Aino Esimerkki, toimitusjohtaja (pj)
+  Ville Testinen, teknologiajohtaja
+  Sanna Mallikas, tuotepäällikkö
+  Pekka Demola, talousjohtaja (sihteeri)
+
+1. Kokouksen avaus
+
+Puheenjohtaja avasi kokouksen klo 13.02.
+
+2. Revontuli 3.0 -julkaisun tilanne
+
+Tuotepäällikkö esitteli tilanteen. Karttapalvelun toimittaja on ilmoittanut
+rajapintamuutoksesta, joka vaikuttaa reittien laskentaan. Muutos vaatii arviolta
+kuuden viikon lisätyön.
+
+Päätös: Revontuli 3.0:n julkaisu siirretään 1.12.2026:sta 2.2.2027:een.
+Asiakkaille tiedotetaan muutoksesta viimeistään 31.10.2026.
+
+3. Budjetti
+
+Talousjohtaja esitti lisäbudjettia rajapintamuutoksen ja testauksen kuluihin.
+
+Päätös: Revontuli 3.0:n budjettia korotetaan 45 000 eurolla.
+
+4. Resursointi
+
+Teknologiajohtaja totesi, että testauksen kapasiteetti on pullonkaula.
+
+Päätös: Palkataan kaksi testaajaa määräaikaisiksi 30.6.2027 asti.
+Rekrytointi aloitetaan marraskuussa.
+
+5. Muut asiat
+
+Virvatuli Kuljetus Oy on pyytänyt tarjousta Revontulen laajentamisesta Ruotsiin.
+Tuotepäällikkö valmistelee tarjouksen seuraavaan kokoukseen.
+
+6. Seuraava kokous
+
+Seuraava kokous pidetään 11.11.2026 klo 13.00.
+
+7. Kokouksen päättäminen
+
+Puheenjohtaja päätti kokouksen klo 14.27.

@@ -1,0 +1,35 @@
+LUMIKKO DEMO OY - UUDEN TYÖNTEKIJÄN USEIN KYSYTYT KYSYMYKSET
+
+(Kuvitteellinen yritys. Dokumentti on localrag-projektin demoaineistoa.)
+
+Missä toimisto on ja milloin se on auki?
+Toimisto on osoitteessa Esimerkkikatu 5, 33100 Tampere, 4. kerros. Toimisto on auki
+arkisin klo 7-18. Kulkukortilla pääsee sisään myös iltaisin ja viikonloppuisin.
+
+Mihin otan yhteyttä, jos tietokoneeni ei toimi?
+IT-tukeen saa yhteyden osoitteesta it-tuki@lumikko.example tai Teamsin
+IT-tuki-kanavalla. Kiireellisissä asioissa soita sisäiseen numeroon 2100.
+
+Mikä on toimiston langattoman verkon nimi?
+Työntekijöiden verkko on Lumikko-Staff, ja siihen kirjaudutaan omilla tunnuksilla.
+Vieraille on oma verkkonsa Lumikko-Guest, jonka salasana vaihtuu viikoittain ja
+näkyy aulan näytöllä.
+
+Saanko pysäköidä toimiston yhteydessä?
+Toimiston pihalla on kuusi autopaikkaa, jotka varataan Lumon Tilat-näkymästä.
+Sähköauton latauspaikkoja on kaksi.
+
+Miten lounasetu toimii?
+Lounasetu on ladattu henkilöstökorttiin, 13,50 euroa työpäivää kohden. Etu ei siirry
+seuraavalle kuukaudelle.
+
+Kuka on työterveyshuollon palveluntarjoaja?
+Työterveyshuollon yhteystiedot ja ajanvarausohjeet löytyvät intranetin
+Työterveys-sivulta.
+
+Milloin palkka maksetaan?
+Palkka maksetaan kuukauden viimeisenä pankkipäivänä.
+
+Kenelle ilmoitan sairauspoissaolosta?
+Ilmoita poissaolosta omalle esihenkilölle ennen työpäivän alkua ja kirjaa poissaolo
+Lumoon.
